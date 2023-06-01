@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(120deg, #96C7EB, #fff, #fff, #0C1033);
+    overflow-y: hidden;
+    height: 100vh;
+}
+h1{
+    margin-left: 5%;
+    font-size: 50px;
+    color: #0C1033;
+}
+.form{
+    margin-left: 40%;
+    margin-top: 2%;
+}
+.table{
+    margin-right: 70%;
+    border-style: outset;
+    border: solid;
+    border-radius: 5px;
+    border-color: #96C7EB;
+    transition: 1s;
+}
+.table:hover{
+    border-radius: 20px;
+    border-color: #0C1033;
+}
+legend{
+    color: #96C7EB;
+    margin-left: 25%;
+}
+.img{
+    width: 600px;
+    height: 300px;
+    background: url("../asset/Emit.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    float: left;
+}
+.cercle{
+    animation: anim 1s linear 1s infinite alternate;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(150deg, #96C7EB, #fff);
+    margin-left: 50%;
+    border-radius: 50%;
+}
+.cercle1{
+    width: 500px;
+    height: 500px;
+    float: right;
+    background: linear-gradient(200deg, #0C1033, #fff);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.inText{
+    width: 100px;
+    border-style: outset;
+    border-left: none;
+    border-top: none;
+    border-right-style: dashed;
+}
+.btn{
+    margin-left: 12%;
+    border: none;
+    background: #96C7EB;
+    color: #0C1033;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.btn:hover{
+    background: #0C1033;
+    color: #fff;
+    border-radius: 5px;
+    transition: 1s;
+}

@@ -1,0 +1,432 @@
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    overflow-x: hidden;
+}
+h2{
+    color: #0C1033;
+    margin-left: 50px;
+}
+ul{
+    list-style-type: none;
+}
+.crud{
+    border: solid 2px #838b91;
+    border-style: outset;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    transition: 0.5s;
+    width: 150px;
+    height: 40px;
+}
+.crud:hover{
+    background-color: #0C1033;
+    color: #96C7EB;
+    transition: 0.5s;
+}
+.deconnex{
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    margin-top: 70%;
+}
+.logo{
+    margin-left: 15px;
+    width: 230px;
+    height: 110px;
+    background-image: url("../asset/Emit.jpg");
+    background-repeat: no-repeat;
+    background-size: 230px;
+}
+hr{
+    border-color: #0C1033;
+}
+.leftNav{
+    position: fixed;
+    float: left;
+    border: none;
+    background: rgb(128, 118, 118);
+    width: 270px;
+    height: 100vh;
+}
+
+
+
+/**********************************************************************************************/
+/**********************************************************************************************/
+/**************************************Contenu droite******************************************/
+.containt{
+    margin-left: 19%;
+    background-image: linear-gradient(120deg, #96C7EB,#fff,#FFF, #0C1033);
+    height: 100vh;
+}
+.bienvenu{
+    float: right;
+    color: rgb(128, 118, 118);
+    margin-right: 20%;
+    margin-top: 25%;
+    font-size: 50px;
+}
+.messagePHP{
+    float: right; 
+    color: red; 
+    margin-top: 35%; 
+    font-size: 20px;
+}
+/****************************contenu de l'inscription*******************/
+.contenuInscri{
+    display: none;
+    margin-left: 1%;
+}
+.table{
+    margin-left: 10%;
+    width: 55%;
+    border-style: outset;
+    border: solid;
+    border-radius: 5px;
+    border-color: #96C7EB;
+    transition: 1s;
+}
+.table:hover{
+    border-radius: 20px;
+    border-color: #0C1033;
+}
+.legend{
+    color: #96C7EB;
+    margin-left: 25%;
+    transition: 1s;
+}
+.btnInscri{
+    margin-left: 20%;
+    margin-top: 5px;
+    border: none;
+    background: #96C7EB;
+    color: #0C1033;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 16px;
+}
+.btnInscri:hover{
+    background: #0C1033;
+    color: #fff;
+    transition: 0.5s;
+}
+.sessionFil{
+    color: #96C7EB;
+    margin-left: 30%;
+    margin-bottom: 20%;
+    transition: 1s;
+}
+
+/*****************************************************************************/
+/**************************Contenu Liste*************************************/
+.contenuListe{
+    display: none;
+    margin-left: 1%;
+}
+.tableListe {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+.trr,.tdd {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #0C1033;
+}
+
+.trr {
+    background-color: transparent;
+    color: #333;
+}
+.tcorp .trr:nth-child(even) {
+    background-color: #96C7EB;
+}
+
+
+.formModifSuppr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+  
+.form-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.form-input:focus {
+    outline: none;
+    border-color: #96C7EB;
+    box-shadow: 0px 0px 5px rgba(114, 137, 218, 0.4);
+}
+  
+.form-submit {
+    background-color: #96C7EB;
+    color: #0C1033;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+  
+.form-submit:hover {
+    background-color: #0C1033;
+    color: #fff;
+    transition: 0.5s;
+}
+  
+.labFormModSuppr {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.table2{
+    width: 40%;
+    border-style: outset;
+    border: solid;
+    border-radius: 5px;
+    border-color: #96C7EB;
+    transition: 1s; 
+}
+.table2:hover{
+    border-radius: 20px;
+    border-color: #0C1033;
+}
+
+
+/***************************************************************************/
+.contenuModif{
+    display: none;
+    margin-left: 1%;
+}
+.contenuSuppr{
+    display: none;
+    margin-left: 1%;
+}
+i{
+    font-size: 30px;
+    color: #0C1033;
+}
+#indexation{
+    font-size: 15px;
+}
+.barreRecherche{
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+/**********Alert Customiser****************/
+.alert{
+    background: #96C7EB;
+    padding: 20px 40px;
+    min-width: 350px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid #0C1033;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.alert.showAlert{
+    opacity: 1;
+    pointer-events: auto;
+}
+@keyframes showslide{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+@keyframes hideslide{
+    0%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.alert.show{
+    animation: showslide 1s ease forwards;
+}
+.alert.hide{
+    animation: hideslide 1s ease forwards;
+}
+.alert .bi-shield-fill-exclamation{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0C1033;
+    font-size: 30px;
+}
+.alert .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: #0C1033;
+}
+.alert .closebtn{
+    background: #3d8fca;
+    padding: 20px 18px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.alert #valbtn{
+    background: #3d8fca;
+    padding: 23px 19px;
+    position: absolute;
+    right: 59px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+}
+.bi-check-lg{
+    color: #055828;
+    font-size: 22px;
+    line-height: 40px;
+}
+#valbtn:hover{
+    background: #96C7EB;
+}
+.closebtn .bi-x-lg{
+    color: #9b270a;
+    font-size: 22px;
+    line-height: 40px;
+}
+.closebtn:hover{
+    background: #96C7EB;
+}
+
+
+#valibtn{
+    background: #3d8fca;
+    padding: 23px 19px;
+    position: absolute;
+    right: 59px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+}
+#valibtn:hover{
+    background: #96C7EB;
+}
+.alerts{
+    background: #96C7EB;
+    padding: 20px 40px;
+    min-width: 350px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid #0C1033;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.alerts.showAlerts{
+    opacity: 1;
+    pointer-events: auto;
+}
+@keyframes showslides{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+@keyframes hideslides{
+    0%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.alerts.shows{
+    animation: showslides 1s ease forwards;
+}
+.alerts.hides{
+    animation: hideslides 1s ease forwards;
+}
+.alerts .bi-shield-fill-exclamation{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0C1033;
+    font-size: 30px;
+}
+.alerts .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: #0C1033;
+}
+.alerts .closebtns{
+    background: #3d8fca;
+    padding: 20px 18px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.bi-check-lg{
+    color: #055828;
+    font-size: 22px;
+    line-height: 40px;
+}
+.closebtns .bi-x-lg{
+    color: #9b270a;
+    font-size: 22px;
+    line-height: 40px;
+}
+.closebtns:hover{
+    background: #96C7EB;
+}
